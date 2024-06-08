@@ -2,6 +2,7 @@
 /*
  * Generic userspace implementations of gettimeofday() and similar.
  */
+#include <linux/compat_time.h>
 #include <linux/compiler.h>
 #include <linux/math64.h>
 #include <linux/time.h>
@@ -9,6 +10,8 @@
 #include <linux/hrtimer_defs.h>
 #include <vdso/datapage.h>
 #include <vdso/helpers.h>
+
+
 
 /*
  * The generic vDSO implementation requires that gettimeofday.h
