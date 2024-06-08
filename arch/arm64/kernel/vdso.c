@@ -33,7 +33,7 @@
 #include <linux/vmalloc.h>
 #include <vdso/datapage.h>
 #include <vdso/helpers.h>
-#include <uapi/asm/vsyscall.h>
+#include <asm/vdso/vsyscall.h>
 
 
 #include <asm/cacheflush.h>
